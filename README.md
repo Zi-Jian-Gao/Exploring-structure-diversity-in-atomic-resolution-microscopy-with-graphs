@@ -1,4 +1,4 @@
-## Exploring structure diversity in atomic resolution microscopy with graph neural networks
+## Exploring structure diversity in atomic resolution microscopy with graphs
 
 ## Abstract
 The emergence of deep learning (DL) has provided great opportunities for the high-throughput analysis of atomic-resolution micrographs. However, the DL models trained by fixed image patches generally lack efficiency and flexibility when processing images containing diversified atomic configurations. 
