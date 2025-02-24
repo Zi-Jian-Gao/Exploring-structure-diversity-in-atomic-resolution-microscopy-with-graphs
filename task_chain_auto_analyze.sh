@@ -13,15 +13,15 @@ echo "\033[31mRecognition atom process completed. Results are stored in the 'ato
 echo "\033[31mPress Enter to continue...\033[0m"
 read input
 
-#dophant atom recognize and select
-mkdir -p dophant_atom/raw && \
-cp atom/* dophant_atom/raw && \
-cd recognize_dophant/egnn/ && \
-python test_pl_vor.py --path=../../dophant_atom/  && \
-python metricse2e_vor.py --json_path=./logs/0/version_0/test.json --save_path=../../dophant_atom/raw && \
-python cz_exam.py  --save_path=../../dophant_atom/raw && \
+#dopant atom recognize and select
+mkdir -p dopant_atom/raw && \
+cp atom/* dopant_atom/raw && \
+cd recognize_dopant/egnn/ && \
+python test_pl_vor.py --path=../../dopant_atom/  && \
+python metricse2e_vor.py --json_path=./logs/0/version_0/test.json --save_path=../../dopant_atom/raw && \
+python cz_exam.py  --save_path=../../dopant_atom/raw && \
 cd .. && cd .. && \
-echo "\033[31mRecognition dophant atom process completed. Results are stored in the 'dophant_atom' directory.\033[0m" && \
+echo "\033[31mRecognition dopant atom process completed. Results are stored in the 'dopant_atom' directory.\033[0m" && \
 echo "\033[31mPress Enter to continue...\033[0m"
 read input
 
@@ -36,7 +36,7 @@ echo "\033[31mPress Enter to continue...\033[0m"
 read input
 
 #grain boundary recognize
-cd recognize_grain/egnn/ && \
+cd recognize_grain_boundary/egnn/ && \
 python test_pl_vor_aug.py --path=../../gb/raw  && \
 python metricse2e.py --json_path=./logs/0/version_0/test.json --save_path=../../gb/raw && \
 echo "\033[31mRecognition grain boundary process completed. Results are stored in the 'gb' directory.\033[0m" && \
